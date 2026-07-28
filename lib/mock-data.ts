@@ -74,40 +74,39 @@ export const DESTINATION_PRESETS: Record<string, {
       { category: "Electronics", item: "Portable Battery Bank" },
     ]
   },
-  london: {
-    destination: "London, United Kingdom",
-    currency: "GBP",
-    avgDailyCost: 320,
-    themes: ["Westminster & Royal Palaces", "British Museum & Cove Garden", "Tower Bridge & South Bank Stroll", "Notting Hill & Hyde Park"],
+  bali: {
+    destination: "Bali, Indonesia",
+    currency: "USD",
+    avgDailyCost: 150,
+    themes: ["Ubud Rice Terraces & Sacred Monkey Forest", "Uluwatu Sunset Temple & Kecak Dance", "Seminyak Beach Clubs & Ocean Dining", "Nusa Penida Island Adventure"],
     stopsPool: [
-      { title: "Traditional English Breakfast at Regency Café", category: "food", timeOfDay: "morning", durationMinutes: 60, estimatedCost: 15, locationName: "Westminster, London", description: "Classic full English breakfast with sausage, eggs, beans, bacon, and tea.", insiderTip: "Cash only! Have 15 GBP ready." },
-      { title: "Westminster Abbey & Big Ben Views", category: "sightseeing", timeOfDay: "morning", durationMinutes: 120, estimatedCost: 27, locationName: "Parliament Square", description: "Explore 1,000 years of royal coronation history and Big Ben clock tower.", insiderTip: "Cross Westminster Bridge for the best photo angle." },
-      { title: "British Museum Artifacts Exploration", category: "activity", timeOfDay: "afternoon", durationMinutes: 150, estimatedCost: 0, locationName: "Great Russell St, Bloomsbury", description: "View world treasures including the Rosetta Stone and Parthenon Sculptures.", insiderTip: "Admission is free, but advance timed entry tickets are recommended." },
-      { title: "Borough Market Culinary Tasting", category: "food", timeOfDay: "afternoon", durationMinutes: 90, estimatedCost: 30, locationName: "Southwark, London", description: "Bustling historic food market featuring Scottish sausage rolls and oysters.", insiderTip: "Try the viral chocolate strawberries at Kappacasein." },
-      { title: "London Eye Evening Flight", category: "sightseeing", timeOfDay: "evening", durationMinutes: 45, estimatedCost: 35, locationName: "Riverside Building, County Hall", description: "Giant observation wheel offering 360-degree views across London skyline.", insiderTip: "Book fast-track tickets to skip long queues." },
+      { title: "Tegallalang Rice Terrace Sunrise", category: "sightseeing", timeOfDay: "morning", durationMinutes: 120, estimatedCost: 10, locationName: "Ubud, Gianyar", description: "Walk through lush green terraced rice paddies and jungle swings.", insiderTip: "Arrive at 7:00 AM before heat and tour buses arrive." },
+      { title: "Ubud Sacred Monkey Forest Sanctuary", category: "activity", timeOfDay: "morning", durationMinutes: 90, estimatedCost: 8, locationName: "Padangtegal, Ubud", description: "Explore ancient mossy temples guarded by hundreds of Balinese long-tailed macaques.", insiderTip: "Secure loose items like sunglasses and hats in your bag." },
+      { title: "Organic Smoothie Bowl Lunch at Nalu Bowls", category: "food", timeOfDay: "afternoon", durationMinutes: 45, estimatedCost: 9, locationName: "Seminyak Beach Road", description: "Fresh tropical dragonfruit, mango, and granola bowls by the ocean.", insiderTip: "Try the Maverick bowl topped with almond butter." },
+      { title: "Uluwatu Temple Cliff Walk & Kecak Dance", category: "sightseeing", timeOfDay: "evening", durationMinutes: 120, estimatedCost: 15, locationName: "Uluwatu Cliff", description: "Watch traditional fire chanting dancers against the setting sun over the Indian Ocean.", insiderTip: "Seats fill up by 5:15 PM for the 6:00 PM show." },
+      { title: "Seafood BBQ Dinner on Jimbaran Beach", category: "food", timeOfDay: "night", durationMinutes: 120, estimatedCost: 35, locationName: "Jimbaran Bay", description: "Dine barefoot on the sand with grilled red snapper, prawns, and sambal sauce.", insiderTip: "Choose your fish directly from the ice counter by weight." },
     ],
     packing: [
-      { category: "Essentials", item: "Contactless Oyster / Bank Card" },
-      { category: "Clothing", item: "Compact Umbrella & Waterproof Jacket" },
-      { category: "Electronics", item: "UK 3-prong Plug Adapter" },
+      { category: "Essentials", item: "Sunscreen SPF 50 & Reef Safe" },
+      { category: "Clothing", item: "Swimwear & Sarong for Temple Visits" },
+      { category: "Electronics", item: "Waterproof Phone Pouch" },
     ]
   },
-  rome: {
-    destination: "Rome, Italy",
-    currency: "EUR",
-    avgDailyCost: 290,
-    themes: ["Colosseum & Ancient Forum", "Vatican City & Sistine Chapel", "Trevi Fountain & Spanish Steps", "Trastevere Food & Wine"],
+  dubai: {
+    destination: "Dubai, United Arab Emirates",
+    currency: "AED",
+    avgDailyCost: 450,
+    themes: ["Burj Khalifa Sky Deck & Dubai Mall", "Desert Safari & Dune Bashing", "Palm Jumeirah & Atlantis Aquaventure", "Old Dubai Souks & Abra Creek Boat"],
     stopsPool: [
-      { title: "Espresso & Cornetto at Sant'Eustachio", category: "food", timeOfDay: "morning", durationMinutes: 30, estimatedCost: 5, locationName: "Piazza Sant'Eustachio", description: "Rome's most famous wood-roasted espresso coffee bar.", insiderTip: "Drink standing at the counter like a true Roman." },
-      { title: "Colosseum & Roman Forum Guided Walk", category: "sightseeing", timeOfDay: "morning", durationMinutes: 180, estimatedCost: 35, locationName: "Piazza del Colosseo", description: "Step back into gladiator history inside the ancient amphitheater.", insiderTip: "Includes access to the Palatine Hill overlooking the Forum." },
-      { title: "Piazza Navona & Pantheon Visit", category: "sightseeing", timeOfDay: "afternoon", durationMinutes: 90, estimatedCost: 5, locationName: "Historic Center", description: "Marvel at Bernini's fountains and the ancient oculus dome of the Pantheon.", insiderTip: "Grab a gelato at Frigidarium nearby." },
-      { title: "Trastevere Food & Wine Tasting", category: "food", timeOfDay: "evening", durationMinutes: 150, estimatedCost: 50, locationName: "Trastevere District", description: "Cobblestone neighborhood famous for authentic Cacio e Pepe and Suppli.", insiderTip: "Dine at Da Enzo al 29 if you get a table early." },
-      { title: "Trevi Fountain Midnight Coin Toss", category: "relaxation", timeOfDay: "night", durationMinutes: 45, estimatedCost: 0, locationName: "Piazza di Trevi", description: "Toss a coin over your left shoulder to ensure your return to Rome.", insiderTip: "Visit after 10 PM when crowds clear out." },
+      { title: "Burj Khalifa At The Top (124th Floor)", category: "sightseeing", timeOfDay: "morning", durationMinutes: 90, estimatedCost: 45, locationName: "Downtown Dubai", description: "Observation deck of the world's tallest building overlooking the Persian Gulf.", insiderTip: "Book prime sunset hours 3 weeks in advance." },
+      { title: "Abra Boat Ride across Dubai Creek & Gold Souk", category: "activity", timeOfDay: "afternoon", durationMinutes: 120, estimatedCost: 5, locationName: "Deira / Bur Dubai", description: "Traditional wooden boat crossing followed by exploring gold and spice markets.", insiderTip: "Abra ride costs only 1 AED cash per person." },
+      { title: "Desert Safari, Dune Bashing & BBQ Camp", category: "activity", timeOfDay: "evening", durationMinutes: 300, estimatedCost: 85, locationName: "Lahbab Desert", description: "Thrilling 4x4 dune bashing, camel riding, henna painting, and belly dance dinner.", insiderTip: "Hold on tight during dune bashing and wear closed shoes." },
+      { title: "Dubai Fountain Show & Waterfront Dinner", category: "relaxation", timeOfDay: "night", durationMinutes: 90, estimatedCost: 60, locationName: "Dubai Mall Promenade", description: "Choreographed water fountain show set to music with views of Burj Khalifa.", insiderTip: "Book an outdoor table at Serafina or HuQqa for prime views." },
     ],
     packing: [
-      { category: "Essentials", item: "Shoulder Cover / Scarf for Churches" },
-      { category: "Clothing", item: "Breathable linen clothing & sturdy shoes" },
-      { category: "Electronics", item: "Type L / C European Adapter" },
+      { category: "Essentials", item: "Sunglasses & UV Sun Hat" },
+      { category: "Clothing", item: "Modest breathable clothing for public malls" },
+      { category: "Electronics", item: "Type G UK 3-pin Adapter" },
     ]
   }
 };
@@ -140,14 +139,14 @@ export function generateMockItinerary(promptText: string): TripItinerary {
   if (matchedPresetKey) {
     targetDestination = DESTINATION_PRESETS[matchedPresetKey].destination;
   } else {
-    // Attempt location extraction heuristic from prompt text
-    const inMatch = promptText.match(/(?:in|to|for|around)\s+([A-Z][a-zA-Z\s,]+?)(?:\s+for|\s+with|\s+on|\s+\d+|$|\.|\,)/);
-    if (inMatch && inMatch[1]) {
-      targetDestination = inMatch[1].trim();
+    // Smart location extraction heuristic from prompt text
+    const inMatch = promptText.match(/(?:in|to|for|around|visit|exploring)\s+([a-zA-Z\s,]+?)(?:\s+for|\s+with|\s+on|\s+\d+|$|\.|\,)/i);
+    if (inMatch && inMatch[1] && inMatch[1].trim().length > 1) {
+      targetDestination = inMatch[1].trim().split(/\s+/).map(w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()).join(' ');
     } else {
       // Capitalize first 2-3 words of prompt as destination title fallback
       const words = promptText.trim().split(/\s+/);
-      targetDestination = words.slice(0, 3).map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+      targetDestination = words.slice(0, 3).map(w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()).join(' ');
     }
   }
 
@@ -166,7 +165,6 @@ export function generateMockItinerary(promptText: string): TripItinerary {
     let dayStops: ItineraryStop[] = [];
 
     if (preset && preset.stopsPool) {
-      // Cycle through preset stops
       const startIdx = ((d - 1) * 2) % preset.stopsPool.length;
       const selected = [
         preset.stopsPool[startIdx % preset.stopsPool.length],
@@ -213,7 +211,7 @@ export function generateMockItinerary(promptText: string): TripItinerary {
           durationMinutes: 75,
           estimatedCost: 35,
           locationName: `${targetDestination} Culinary District`,
-          description: `Sample regional specialties and freshly prepared authentic dishes at a top-rated local eatery.`,
+          description: `Sample regional specialties and freshly prepared authentic dishes at a top-rated local eatery in ${targetDestination}.`,
           insiderTip: `Ask your server for the house chef recommendation.`
         },
         {
@@ -224,7 +222,7 @@ export function generateMockItinerary(promptText: string): TripItinerary {
           durationMinutes: 120,
           estimatedCost: 25,
           locationName: `${targetDestination} Arts & Cultural Quarter`,
-          description: `Immerse into local history and artistic heritage with panoramic views across the city skyline.`,
+          description: `Immerse into local history and artistic heritage with panoramic views across the ${targetDestination} skyline.`,
           insiderTip: `Book entry tickets online in advance to skip ticket counter lines.`
         },
         {
@@ -235,7 +233,7 @@ export function generateMockItinerary(promptText: string): TripItinerary {
           durationMinutes: 120,
           estimatedCost: 50,
           locationName: `${targetDestination} Waterfront / Old Town`,
-          description: `Enjoy an evening stroll along historic lanes followed by a relaxed dinner paired with local beverages.`,
+          description: `Enjoy an evening stroll along historic lanes followed by a relaxed dinner paired with local beverages in ${targetDestination}.`,
           insiderTip: `Reserve a window or outdoor terrace table for sunset.`
         }
       ];
